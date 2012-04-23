@@ -30,7 +30,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-var URL_PREFIX = 'http://translate.google.com/?ie=UTF-8&sl=auto&tl=en&text=';
+var URL_PREFIX = 'http://translate.google.com/?ie=UTF-8&sl=auto&tl=de&text=';
 
 var translate = function(string) {
   var url = URL_PREFIX + string.replace(/ /g, "+");
@@ -38,7 +38,7 @@ var translate = function(string) {
 }
 
 chrome.contextMenus.create({
-  'title': "Translate '%s' to English",
+  'title': "Translate '%s'h",
   'contexts': ['selection'],
   'onclick': function(info, tab) {
     translate(info.selectionText);
