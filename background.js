@@ -38,7 +38,7 @@ var translate = function(string) {
 }
 
 chrome.contextMenus.create({
-  'title': "Translate '%s'h",
+  'title': "Translate '%s'",
   'contexts': ['selection'],
   'onclick': function(info, tab) {
     translate(info.selectionText);
